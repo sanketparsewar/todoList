@@ -175,6 +175,11 @@ footer {
   margin: 0 0 20px;
   padding: 0;
 }
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(rgb(100, 168, 173),#95a58e, rgba(241, 239, 239, 0.726));
+  }
+}
 
 @media (max-width: 440px) {
   .main {
