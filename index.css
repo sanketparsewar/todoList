@@ -1,0 +1,189 @@
+body {
+  /*border: 1px solid black; */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: linear-gradient(rgb(100, 168, 173),#95a58e, rgba(241, 239, 239, 0.726));
+  background-repeat: no-repeat;
+}
+
+.content {
+  margin: auto;
+  width: fit-content;
+}
+
+header {
+  margin: 20px;
+  align-content: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+}
+.image-logo {
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+}
+
+/* --------container start here----- */
+.container {
+  
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/*------- main start here -------*/
+.main {
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+
+#add-task {
+  width: 50%;
+  height: 70px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(236, 235, 235);
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: rgb(59, 55, 55);
+}
+#add-btn {
+  width: 50px;
+  height: 50px;
+  margin: auto 10px;
+  text-align: center;
+  background-color: rgb(46, 151, 46);
+  border-radius: 100%;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+
+#add-btn:hover {
+  cursor: pointer;
+  background-color: rgb(1, 110, 1);
+}
+
+#save {
+  visibility: hidden;
+  padding: 10px 20px;
+  margin: auto 0;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(27, 190, 231);
+}
+
+#clear-all {
+  width: 150px;
+  padding: 10px 20px;
+  margin: auto 0;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(247, 178, 178);
+}
+#clear-all:hover {
+  background-color: rgb(228, 45, 45);
+  cursor: pointer;
+}
+
+#message {
+  color: green;
+  font-size: large;
+  margin-bottom: 0;
+}
+/*------- main end here---- */
+
+/* -----task-List box start -----*/
+#task-list {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#edit-btn {
+  width: 30px;
+  margin: 15px 10px;
+  align-content: center;
+}
+
+#edit-btn:hover {
+  color: green;
+  cursor: pointer;
+}
+ul {
+  display: flex;
+}
+#task-list {
+  display: block;
+  padding: 0;
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.task-item {
+  display: flex;
+  max-width: 600px;
+  line-height: 30px;
+  text-align: center;
+  align-content: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(236, 235, 235);
+  font-size: 20px;
+  padding-left: 0;
+  padding-right: 30px;
+  color: rgb(59, 55, 55);
+  margin: 10px auto;
+}
+
+#delete-btn {
+  margin: 15px 10px;
+  margin-right: 10px;
+  align-content: center;
+}
+#delete-btn:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* -------task-List box ends here------ */
+
+footer {
+  text-align: center;
+  align-items: center;
+  color: rgb(48, 46, 46);
+  font-size: 20px;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+@media (max-width: 440px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  #add-task,
+  #clear-all {
+    width: 100%;
+  }
+}
