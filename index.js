@@ -86,10 +86,6 @@ function editItem(i) {
   
 }
 
-// function finalEdit(i) {
-//   let data = addTask.value;
-
-// }
 
 function completed(i) {
   taskArray[i].completed = !taskArray[i].completed;
